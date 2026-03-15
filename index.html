@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Siglattice</title>
+    <meta
+      name="description"
+      content="Siglattice builds structured systems for complex, high-signal work."
+    >
+    <style>
+      :root {
+        --bg: #f5efe4;
+        --panel: rgba(255, 252, 247, 0.84);
+        --text: #182126;
+        --muted: #53616a;
+        --line: rgba(24, 33, 38, 0.12);
+        --accent: #c65d3b;
+        --accent-soft: rgba(198, 93, 59, 0.12);
+        --shadow: 0 24px 60px rgba(24, 33, 38, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        min-height: 100%;
+        background:
+          radial-gradient(circle at top left, rgba(198, 93, 59, 0.18), transparent 30%),
+          radial-gradient(circle at right, rgba(39, 89, 74, 0.14), transparent 28%),
+          linear-gradient(160deg, #f7f1e7 0%, #efe5d2 48%, #e8ddca 100%);
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--text);
+      }
+
+      .shell {
+        width: min(1120px, calc(100vw - 48px));
+        margin: 0 auto;
+        padding: 32px 0 56px;
+      }
+
+      .masthead {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 56px;
+      }
+
+      .brand {
+        font-size: 0.9rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+      }
+
+      .status {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 10px 14px;
+        background: rgba(255, 255, 255, 0.45);
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.8fr);
+        gap: 28px;
+        align-items: stretch;
+      }
+
+      .intro,
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: var(--panel);
+        backdrop-filter: blur(10px);
+        box-shadow: var(--shadow);
+      }
+
+      .intro {
+        padding: 48px;
+      }
+
+      h1 {
+        margin: 0 0 20px;
+        font-size: clamp(3.6rem, 10vw, 7.2rem);
+        line-height: 0.92;
+        font-weight: 600;
+        letter-spacing: -0.05em;
+      }
+
+      .lead {
+        max-width: 36rem;
+        margin: 0 0 28px;
+        font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      .pillrow {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .pill {
+        padding: 10px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 0.92rem;
+      }
+
+      .panel {
+        padding: 28px;
+        display: grid;
+        gap: 24px;
+      }
+
+      .eyebrow {
+        margin: 0;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        font-size: 0.78rem;
+      }
+
+      .panel p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .signal {
+        padding: 16px 18px;
+        border-radius: 20px;
+        background: var(--accent-soft);
+        border: 1px solid rgba(198, 93, 59, 0.18);
+      }
+
+      .signal strong {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 1.05rem;
+        color: var(--text);
+      }
+
+      footer {
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 840px) {
+        .shell {
+          width: min(100vw - 28px, 1120px);
+          padding-top: 18px;
+        }
+
+        .masthead {
+          margin-bottom: 22px;
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .hero {
+          grid-template-columns: 1fr;
+        }
+
+        .intro,
+        .panel {
+          padding: 24px;
+          border-radius: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <div class="masthead">
+        <div class="brand">Siglattice</div>
+        <div class="status">Public site live via GitHub Pages</div>
+      </div>
+
+      <section class="hero">
+        <article class="intro">
+          <h1>Structured systems for high-signal work.</h1>
+          <p class="lead">
+            Siglattice builds clear, durable interfaces for complex domains:
+            software, operations, and the connective tissue that keeps them legible.
+          </p>
+          <div class="pillrow">
+            <div class="pill">Systems Thinking</div>
+            <div class="pill">Applied Software</div>
+            <div class="pill">Operational Clarity</div>
+          </div>
+        </article>
+
+        <aside class="panel">
+          <div>
+            <p class="eyebrow">Now Serving</p>
+            <p>
+              This is the initial public landing page for the domain. The site is
+              intentionally lightweight so it can deploy directly from GitHub Pages.
+            </p>
+          </div>
+
+          <div class="signal">
+            <strong>Single-file deployment</strong>
+            <p>
+              No framework, no build pipeline, and no extra hosting layer. What is in
+              the repository root is what gets served.
+            </p>
+          </div>
+
+          <div class="signal">
+            <strong>Custom domain ready</strong>
+            <p>
+              A root-level `CNAME` is included for `siglattice.com`, so DNS can be
+              pointed at GitHub Pages as soon as you are ready.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <footer>
+        Siglattice.com is being brought online in a deliberately minimal configuration.
+      </footer>
+    </main>
+  </body>
+</html>
