@@ -4,10 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Siglattice</title>
-    <meta
-      name="description"
-      content="Siglattice"
-    >
+    <meta name="description" content="Signal lattice.">
     <style>
       :root {
         --bg: #f5f2ea;
@@ -46,7 +43,7 @@
 
       .frame {
         width: min(760px, 100%);
-        padding: 28px 28px 32px;
+        padding: 28px 28px 24px;
         border: 1px solid var(--line);
         border-radius: 28px;
         background: var(--panel);
@@ -64,40 +61,50 @@
 
       h1 {
         margin: 0;
-        font-size: clamp(2.3rem, 6vw, 4.2rem);
-        line-height: 0.98;
+        font-size: clamp(2.2rem, 5.8vw, 4rem);
+        line-height: 1;
         font-weight: 600;
         letter-spacing: -0.045em;
       }
 
       p {
-        margin: 18px 0 0;
-        max-width: 34rem;
+        margin: 14px 0 0;
+        max-width: 28rem;
         color: var(--muted);
-        font-size: 1rem;
-        line-height: 1.7;
+        font-size: 0.98rem;
+        line-height: 1.65;
       }
 
-      .footer {
-        margin-top: 28px;
-        padding-top: 16px;
+      footer {
+        margin-top: 26px;
+        padding-top: 14px;
         border-top: 1px solid var(--line);
         color: var(--muted);
-        font-size: 0.86rem;
+        font-size: 0.84rem;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(31, 36, 34, 0.18);
+      }
+
+      a:hover {
+        border-bottom-color: rgba(31, 36, 34, 0.48);
       }
 
       @media (max-width: 640px) {
         .frame {
-          padding: 22px 20px 24px;
+          padding: 22px 20px 20px;
           border-radius: 22px;
         }
 
         h1 {
-          font-size: clamp(2rem, 11vw, 3rem);
+          font-size: clamp(1.9rem, 10vw, 2.8rem);
         }
 
         p {
-          font-size: 0.96rem;
+          font-size: 0.94rem;
         }
       }
     </style>
@@ -106,11 +113,9 @@
     <main>
       <section class="frame">
         <div class="eyebrow">Siglattice</div>
-        <h1>Structured systems, quietly held.</h1>
-        <p>
-          A durable public surface for software, operations, and thoughtful digital presence.
-        </p>
-        <div class="footer">Present now. Able to grow later.</div>
+        <h1>Signal lattice.</h1>
+        <p>A public marker for structured signal.</p>
+        <footer><a href="https://kristopherwilliams.com/">Kristopher Williams</a></footer>
       </section>
     </main>
   </body>
