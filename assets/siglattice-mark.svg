@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Siglattice grid mark</title>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#f8f4eb" stroke="#294f43" stroke-width="3"/>
+  <path d="M16 16h32M16 32h32M16 48h32M16 16v32M32 16v32M48 16v32" fill="none" stroke="#b9c8c0" stroke-width="2"/>
+  <rect x="10" y="10" width="12" height="12" rx="3" fill="#294f43"/>
+  <rect x="26" y="10" width="12" height="12" rx="3" fill="#7c968a"/>
+  <rect x="42" y="10" width="12" height="12" rx="3" fill="#d6dfda"/>
+  <rect x="10" y="26" width="12" height="12" rx="3" fill="#b38a5a"/>
+  <rect x="26" y="26" width="12" height="12" rx="3" fill="#294f43"/>
+  <rect x="42" y="26" width="12" height="12" rx="3" fill="#7c968a"/>
+  <rect x="10" y="42" width="12" height="12" rx="3" fill="#d6dfda"/>
+  <rect x="26" y="42" width="12" height="12" rx="3" fill="#b38a5a"/>
+  <rect x="42" y="42" width="12" height="12" rx="3" fill="#294f43"/>
+</svg>
