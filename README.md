@@ -10,6 +10,7 @@ Public GitHub Pages site for `siglattice.com` and its OAuth-facing policy pages.
 - `assets/site.css`: shared responsive presentation
 - `assets/siglattice-mark.svg`: original grid mark and favicon
 - `assets/siglattice-mark-512.png`: square raster mark for app branding and touch icons
+- `assets/siglattice-mark-120.png`: exact-size Google OAuth consent-screen logo
 - `CNAME`: custom domain for GitHub Pages
 - `.nojekyll`: disables Jekyll processing so root files are served as-is
 
