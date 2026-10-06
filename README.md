@@ -17,3 +17,17 @@ Public GitHub Pages site for `siglattice.com` and its OAuth-facing policy pages.
 ## GitHub Pages
 
 Enable GitHub Pages for this repository and set the source to the `main` branch root. With the included `CNAME` file, GitHub Pages will provision the site for `siglattice.com`.
+
+## Personal introduction
+
+The homepage is a hand-authored, dependency-free introduction to an ongoing
+life experiment. `assets/primer.css` styles it; it uses the original
+`assets/siglattice-mark.svg`. Policy pages retain `assets/site.css`.
+
+The page distinguishes domains as a naming idea from SigLattice as the
+development ecosystem using them. It contains no demonstration records, private
+data connection, tracking script, or example domain inventory.
+
+Preview with a local static server. Review phone, tablet, and desktop layouts,
+then verify profile/contact/policy links before publishing. Production still
+publishes the root of `main`.

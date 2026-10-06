@@ -1,51 +1,68 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Siglattice</title>
-    <meta name="description" content="life.siglattice.com is a personal life operating system created by Kristopher Williams: durable context, small services, and useful signals working together.">
-    <link rel="icon" href="/assets/siglattice-mark.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/assets/siglattice-mark-512.png">
-    <link rel="stylesheet" href="/assets/site.css">
-  </head>
-  <body>
-    <main class="page page-home">
-      <section class="frame hero">
-        <nav class="topbar" aria-label="Primary navigation">
-          <a class="wordmark" href="/" aria-current="page"><img src="/assets/siglattice-mark.svg" alt="">Siglattice</a>
-          <div class="nav-links">
-            <a href="/privacy-policy/">Privacy</a>
-            <a href="/terms-of-service/">Terms</a>
-          </div>
-        </nav>
-
-        <div class="hero-copy">
-          <p class="eyebrow">A personal life operating system</p>
-          <h1>life.siglattice.com</h1>
-          <p class="lede">A working system created by <a href="https://krwill.xyz/">Kristopher Williams</a> to give everyday signals durable context. Atlas connects small, observable services across calendars, tasks, documents, home signals, and personal memory so they can become useful without becoming opaque.</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SigLattice — a life in context</title>
+  <meta name="description" content="A personal computing ecosystem connecting information, tools, and devices around the things in a life. An ongoing experiment by Kris.">
+  <link rel="canonical" href="https://siglattice.com/">
+  <meta property="og:title" content="SigLattice — a life in context">
+  <meta property="og:description" content="Life has context. So should its software. An ongoing experiment in personal computing.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://siglattice.com/">
+  <meta name="theme-color" content="#f6f3eb">
+  <link rel="icon" href="/assets/siglattice-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/siglattice-mark-512.png">
+  <link rel="stylesheet" href="/assets/primer.css">
+</head>
+<body>
+  <a class="skip-link" href="#introduction">Skip to introduction</a>
+  <div class="page">
+    <header class="masthead">
+      <a class="identity" href="/" aria-label="SigLattice home"><img src="/assets/siglattice-mark.svg" alt="" width="34" height="34"><span>SigLattice</span></a>
+      <a class="maker" href="https://krwill.xyz/">krwill.xyz <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="introduction">
+      <section class="opening" aria-labelledby="title">
+        <div class="opening-copy">
+          <p class="eyebrow"><span class="small-mark" aria-hidden="true"></span>An ongoing life experiment</p>
+          <h1 id="title">Life has <em>context.</em><br>So should<br>its software.</h1>
+          <p class="lead">SigLattice is a personal computing ecosystem connecting the information, tools, and devices in my life.</p>
         </div>
-
-        <div class="principles" aria-label="Operating principles">
-          <article>
-            <h2>Capture once</h2>
-            <p>Keep the source intact, record its provenance, and avoid multiplying copies without purpose.</p>
-          </article>
-          <article>
-            <h2>Context over time</h2>
-            <p>Durable domains let facts, interpretations, and corrections accumulate without pretending they are the same thing.</p>
-          </article>
-          <article>
-            <h2>Useful at the surface</h2>
-            <p>Small services turn that context into timely views and actions while remaining inspectable underneath.</p>
-          </article>
+        <div class="artwork" aria-hidden="true">
+          <svg class="lattice" viewBox="0 0 480 520" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="paper-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#c6cec0" stroke-width=".8"/></pattern>
+              <linearGradient id="tile-green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#365b4b"/><stop offset="1" stop-color="#1e4034"/></linearGradient>
+              <linearGradient id="tile-sage" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b3c5ae"/><stop offset="1" stop-color="#8fa98f"/></linearGradient>
+            </defs>
+            <rect class="grid-field" x="40" y="60" width="400" height="400" fill="url(#paper-grid)"/>
+            <path d="M40 60h14M40 60v14M440 446v14h-14M426 60h14v14M40 446v14h14" fill="none" stroke="#819583" stroke-width="1"/>
+            <g class="threads" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M40 120H330Q360 120 360 150V410Q360 440 390 440H440" stroke="#718b79" stroke-width="2"/>
+              <path d="M80 460V270Q80 240 110 240H370Q400 240 400 210V60" stroke="#ac6b4f" stroke-width="2"/>
+              <path d="M160 60V350Q160 380 190 380H440" stroke="#718b79" stroke-width="1.5"/>
+              <path d="M40 360H250Q280 360 280 330V60" stroke="#718b79" stroke-width="1.5"/>
+            </g>
+            <g class="tile tile-one"><rect x="84" y="84" width="72" height="72" rx="10" fill="url(#tile-green)"/><path d="M104 120h32M120 104v32" stroke="#a9bea3" stroke-width="1.5"/></g>
+            <g class="tile tile-two"><rect x="196" y="84" width="72" height="72" rx="10" fill="#d8dfcf"/><circle cx="232" cy="120" r="7" fill="#749177"/></g>
+            <g class="tile tile-three"><rect x="308" y="84" width="72" height="72" rx="10" fill="url(#tile-sage)"/></g>
+            <g class="tile tile-four"><rect x="84" y="204" width="72" height="72" rx="10" fill="#b78160"/><path d="M106 240h28" stroke="#f6eedc" stroke-width="1.5"/></g>
+            <g class="tile tile-center"><rect x="182" y="190" width="100" height="100" rx="14" fill="url(#tile-green)"/><g fill="#e4e9d8"><rect x="208" y="216" width="12" height="12" rx="2"/><rect x="226" y="216" width="12" height="12" rx="2" opacity=".55"/><rect x="244" y="216" width="12" height="12" rx="2" opacity=".25"/><rect x="208" y="234" width="12" height="12" rx="2" opacity=".55"/><rect x="226" y="234" width="12" height="12" rx="2"/><rect x="244" y="234" width="12" height="12" rx="2" opacity=".55"/><rect x="208" y="252" width="12" height="12" rx="2" opacity=".25"/><rect x="226" y="252" width="12" height="12" rx="2" opacity=".55"/><rect x="244" y="252" width="12" height="12" rx="2"/></g></g>
+            <g class="tile tile-six"><rect x="308" y="204" width="72" height="72" rx="10" fill="#e9eadb" stroke="#a6b49b"/><circle cx="344" cy="240" r="11" fill="none" stroke="#789077" stroke-width="1.5"/></g>
+            <g class="tile tile-seven"><rect x="84" y="324" width="72" height="72" rx="10" fill="#d8dfcf"/></g>
+            <g class="tile tile-eight"><rect x="196" y="324" width="72" height="72" rx="10" fill="url(#tile-sage)"/></g>
+            <g class="tile tile-nine"><rect x="308" y="324" width="72" height="72" rx="10" fill="url(#tile-green)"/><path d="M332 360h24m-12-12v24" stroke="#a9bea3" stroke-width="1.5"/></g>
+            <g fill="#ad6146"><circle cx="80" cy="440" r="4"/><circle cx="400" cy="80" r="4"/></g>
+          </svg>
         </div>
-
-        <footer class="site-footer">
-          <span>Created and operated by <a href="https://krwill.xyz/">Kristopher Williams</a></span>
-          <span><a href="mailto:kristopher.williams@fastmail.com">Contact</a></span>
-        </footer>
+      </section>
+      <section class="continuity" aria-labelledby="continuity-title">
+        <div class="section-heading"><p class="eyebrow">The idea underneath</p><h2 id="continuity-title">Built for<br><em>continuity.</em></h2></div>
+        <div class="continuity-copy"><p>Domains give the things in a life lasting names. Notes, conversations, and activity gather around what they’re about, so each new tool can begin with context.</p><p class="author">I’m Kris, an artist and engineer, building this through everyday use.</p></div>
       </section>
     </main>
-  </body>
+    <footer class="footer"><span>In progress. In use.</span><nav aria-label="Contact and policies"><a href="mailto:kristopher.williams@fastmail.com">Say hello <span aria-hidden="true">↗</span></a><a href="/privacy-policy/">Privacy</a><a href="/terms-of-service/">Terms</a></nav></footer>
+  </div>
+</body>
 </html>
